@@ -4,7 +4,6 @@ function myFunction(x) {
 let navbar = document.querySelector('.navbar');
 let menu = document.querySelector('.menu');
 let moto = document.querySelector('.moto');
-let change = document.querySelector('.change');
 let button = document.querySelector('.header > button');
 
 menu.addEventListener('click',() => {

@@ -1,12 +1,14 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-
-*{
+/* Reset default margin and padding for all elements */
+* {
     margin: 0;
     padding: 0;
 }
 
+/* menu option styling */
 .menu {
     display: inline-block;
     cursor: pointer;
@@ -16,8 +18,7 @@
     padding: 10px;
     display: none;
 }
-  
- .bar2, .bar3 {
+.bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: #470153;
@@ -31,7 +32,7 @@
     background-color: #470153;
     transition: 0.4s;
 }
-  
+
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
 }
@@ -43,33 +44,9 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-logo{
+/* Styling for the main logo */
+.main-logo {
+    /* Logo styling */
     margin-left: 20px;
     font-weight: 400;
     font-size: 50px;
@@ -83,18 +60,18 @@
     display: inline-block;
     animation: gradient-transition 4s infinite;
 }
-
 @keyframes gradient-transition {
-  0% {
-    background-position: 0%;
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
   }
-  100% {
-    background-position: 100%;
-  }
-}
- 
 
-.header{
+/* Header styling */
+.header {
+    /* Header styling */
     font-family: 'Roboto Condensed', sans-serif;
     position: fixed;
     top: 0;
@@ -109,12 +86,13 @@
     align-items: center;
     z-index: 100;
 }
-.navbar{
+.navbar {
+    /* Navigation bar styling */
     margin-left: auto;
     padding-right: 80px;
 }
-
-.navbar a{
+.navbar a {
+    /* Navigation link styling */
     position: relative;
     font-size: 18px;
     color: white;
@@ -122,7 +100,6 @@
     text-decoration: none;
     margin-left: 40px;
 }
-
 .navbar a::before{
     content: '';
     position: absolute;
@@ -133,12 +110,12 @@
     background: rgba(206, 46, 206, 0.997);
     transition: .3s;
 }
-
 .navbar a:hover::before{
     width: 100%;
 }
 
-.login{
+.login {
+    /* Login button styling */
     position: relative;
     background: #fff;
     color: #fff;
@@ -150,7 +127,6 @@
     transition: 0.5s;
     padding: 10px 25px;
 }
-
 .login:hover{
     letter-spacing: 0.25em;
     color: var(--clr);
@@ -174,7 +150,6 @@
     inset: 0;
     display: block;
 }
-
 .login i::before{
     content: '';
     position: absolute;
@@ -186,18 +161,15 @@
     transform: translateX(-50%) skewX(325deg);
     transition: 0.5s;
 }
-
 .login:hover i::before{
     width: 20px;
     left: 20%;
 }
-
 .login i{
     position: absolute;
     inset: 0;
     display: block;
 }
-
 .login i::after{
     content: '';
     position: absolute;
@@ -209,17 +181,16 @@
     transform: translateX(-45%) skewX(325deg);
     transition: 0.5s;
 }
-
 .login:hover i::after{
     width: 20px;
     left: 80%;
 }
-
 button{
     border: none;
     margin-right: 10px;
 }
 
+/* Styling for the centered text */
 .moto{
     position: absolute;
     top: 50%;
@@ -231,14 +202,13 @@ button{
     padding: 20px;
     max-width: 80%;
 }
-
 .responsive-text{
     font-size: 4vw;
     font-weight: bolder;
     margin: 0;
 }
 
-
+/* style for crete button */
 .moto button{
     margin-top: 30px;
     width: 175px;
@@ -262,12 +232,8 @@ button .create-acc{
     text-decoration: none;
 }
 
-/* media queries */
-img{
-    width: 100px;
-    height: auto;
-    filter: brightness(0.7);
-}
+
+/* Media queries for different screen sizes */
 /* mobile */
 @media(max-width : 480px){
     .back-video{
@@ -295,19 +261,15 @@ img{
         align-items: center;
         flex-wrap: wrap;
     }
-    /* .header button{
-        display: none;
-    } */
+    
     .navbar {
         position: fixed;
         padding-top: 20vh;
         display: none;
         flex-direction: column;
         align-content: center;
-        /* flex-wrap: nowrap; */
         align-items: center;
         gap: 60px;
-        /* padding-right: 0; */
         background-color: #000000fc;
         height: 100vh;
         width: 100vw;
@@ -331,7 +293,6 @@ img{
     }
 
     .moto button{
-        /* font-weight: 15px; */
         width: 175px;
     }
 
@@ -372,19 +333,14 @@ img{
         align-items: center;
         flex-wrap: wrap;
     }
-    /* .header button{
-        display: none;
-    } */
     .navbar {
         position: fixed;
         padding-top: 20vh;
         display: none;
         flex-direction: column;
         align-content: center;
-        /* flex-wrap: nowrap; */
         align-items: center;
         gap: 60px;
-        /* padding-right: 0; */
         background-color: #000000fc;
         height: 100vh;
         width: 100vw;
@@ -408,7 +364,6 @@ img{
     }
 
     .moto button{
-        /* font-weight: 15px; */
         width: 175px;
     }
 
@@ -432,7 +387,6 @@ img{
     }
 
     .navbar{
-        /* padding-left: 2px; */
         margin-right: -50px;
     }
     .main-logo{
